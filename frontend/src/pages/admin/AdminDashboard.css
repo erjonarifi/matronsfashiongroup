@@ -1,0 +1,352 @@
+.admin-page {
+  padding-top: 70px;
+  min-height: 100vh;
+  background: var(--cream);
+}
+
+/* Header */
+.admin-header {
+  background: var(--black);
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+}
+
+.admin-header-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.admin-header h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--cream);
+}
+
+.admin-header p {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 0.3rem;
+}
+
+/* Stats */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--cream);
+}
+
+.stat-label {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+/* Body */
+.admin-body {
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Form Section */
+.admin-form-section {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  padding: 2rem;
+}
+
+.admin-form-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.image-preview {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.image-preview img {
+  height: 120px;
+  width: 90px;
+  object-fit: cover;
+  border: 1px solid var(--cream-dark);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Table Section */
+.admin-table-section {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  overflow: hidden;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.table-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table thead {
+  background: var(--cream);
+}
+
+.admin-table th {
+  padding: 0.85rem 1.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray);
+  text-align: left;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.admin-table td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--cream-dark);
+  vertical-align: middle;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background: rgba(245, 240, 232, 0.5);
+}
+
+/* Table Product Cell */
+.table-product {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.table-product img {
+  width: 55px;
+  height: 65px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.table-product-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.table-product-desc {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--gray-light);
+  margin-top: 0.2rem;
+}
+
+/* Category Tag */
+.category-tag {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  background: rgba(201, 169, 110, 0.1);
+  padding: 0.25rem 0.6rem;
+  white-space: nowrap;
+}
+
+/* Price */
+.price-cell {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+/* Stock Control */
+.stock-control {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--cream-dark);
+  width: fit-content;
+}
+
+.stock-control button {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+
+.stock-control button:hover:not(:disabled) {
+  background: var(--black);
+  color: var(--cream);
+}
+
+.stock-control button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.stock-control span {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 36px;
+  text-align: center;
+  border-left: 1px solid var(--cream-dark);
+  border-right: 1px solid var(--cream-dark);
+  line-height: 28px;
+}
+
+.stock-zero {
+  color: var(--error);
+}
+
+.stock-low {
+  color: var(--gold-dark);
+}
+
+/* Actions */
+.table-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--cream-dark);
+  background: transparent;
+  color: var(--black);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.action-btn:hover {
+  background: var(--black);
+  border-color: var(--black);
+  color: var(--cream);
+}
+
+.edit-btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--black);
+}
+
+.delete-btn:hover {
+  background: var(--error);
+  border-color: var(--error);
+  color: white;
+}
+
+.confirm-delete {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.search-input {
+  padding: 0.55rem 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

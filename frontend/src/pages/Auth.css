@@ -1,0 +1,146 @@
+.auth-page {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.auth-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 70px);
+}
+
+/* Image side */
+.auth-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.auth-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,9,5,0.7) 0%, rgba(10,9,5,0.2) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem;
+}
+
+.auth-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-brand .logo-main {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--cream);
+  font-weight: 700;
+}
+
+.auth-brand .logo-sub {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Form side */
+.auth-form-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: var(--cream);
+}
+
+.auth-form-inner {
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-form-header {
+  margin-bottom: 2.5rem;
+}
+
+.auth-form-header h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.auth-form-header p {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--gray);
+  letter-spacing: 0.05em;
+}
+
+.auth-submit {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.75rem !important;
+  padding: 1rem 2rem !important;
+}
+
+.auth-switch {
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-top: 1.5rem;
+}
+
+.auth-switch a {
+  color: var(--gold-dark);
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.auth-switch a:hover {
+  border-color: var(--gold-dark);
+}
+
+.admin-hint {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(201, 169, 110, 0.08);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.admin-hint p {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--gray);
+  margin-bottom: 0.25rem;
+}
+
+.admin-hint code {
+  font-size: 0.8rem;
+  color: var(--gold-dark);
+  background: rgba(201, 169, 110, 0.1);
+  padding: 1px 5px;
+}
+
+@media (max-width: 768px) {
+  .auth-split {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-image {
+    height: 250px;
+  }
+
+  .auth-form-side {
+    padding: 2rem 1.5rem;
+  }
+}
